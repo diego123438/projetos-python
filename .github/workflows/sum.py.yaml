@@ -19,7 +19,7 @@ jobs:
     - name: set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
-        python-version: ${{ mtrix.python-version }}
+        python-version: ${{ matrix.python-version }}
     - name:cinstall dependencies       
       run: |
         python -m pip install --upgrade pip
